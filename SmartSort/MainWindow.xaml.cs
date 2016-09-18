@@ -24,5 +24,15 @@ namespace SmartSort
         {
             InitializeComponent();
         }
+
+        private void image_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            switch (e.Source.ToString())
+            {
+                case "image_minimize":
+                    MessageBox.Show("HELLO WORLD");
+                    break;
+            }
+        }
     }
 }
