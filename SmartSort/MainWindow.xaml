@@ -19,7 +19,7 @@
                 <Image x:Name="image3" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="44" Margin="5,5,0,0" Source="Image/home.png"/>
             </Grid>
             <Grid HorizontalAlignment="Left" Height="340" Background="#2e4053"  VerticalAlignment="Top" Width="151" Margin="0,60,0,0">
-                <Expander x:Name="expander" Header="Home" Foreground="White" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Franklin Gothic Book">
+                <Expander x:Name="expander" Header="Home" Foreground="White" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Franklin Gothic Book" ExpandDirection="Up" IsExpanded="True" Width="131">
                     <Grid Background="#FFE5E5E5"/>
                 </Expander>
             </Grid>
