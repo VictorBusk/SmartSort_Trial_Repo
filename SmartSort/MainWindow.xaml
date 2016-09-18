@@ -16,10 +16,17 @@
             <Grid HorizontalAlignment="Left" Height="55" Background="#fff"  Margin="151,5,0,0" VerticalAlignment="Top" Width="449">
                 <Image x:Name="image" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="30" Source="Image\exit.png" Margin="419,0,0,0"/>
                 <Image x:Name="image1" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="30" Source="Image\mini.png" Margin="384,0,0,0"/>
+                <Image x:Name="image3" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="44" Margin="5,5,0,0" Source="Image/home.png"/>
             </Grid>
-            <Grid HorizontalAlignment="Left" Height="340" Background="#2e4053"  VerticalAlignment="Top" Width="151" Margin="0,60,0,0"/>
+            <Grid HorizontalAlignment="Left" Height="340" Background="#2e4053"  VerticalAlignment="Top" Width="151" Margin="0,60,0,0">
+                <Expander x:Name="expander" Header="Home" Foreground="White" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Franklin Gothic Book">
+                    <Grid Background="#FFE5E5E5"/>
+                </Expander>
+            </Grid>
             <Grid HorizontalAlignment="Left" Height="340" Background="#e5e5e5"  Margin="151,60,0,0" VerticalAlignment="Top" Width="449"/>
-            <Image x:Name="image2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Source="Image/icon2.png" Margin="10,10,0,0"/>
+            <Image x:Name="image2" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Source="Image/icon2.png" Margin="2,5,0,0"/>
+            <Label x:Name="label_title1" Content="Smart" HorizontalAlignment="Left" Margin="44,12,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Foreground="White"/>
+            <Label x:Name="label_title2" Content="Sort" HorizontalAlignment="Left" Margin="102,12,0,0" VerticalAlignment="Top"  FontSize="20" Foreground="White"/>
         </Grid>
 
     </Border>
