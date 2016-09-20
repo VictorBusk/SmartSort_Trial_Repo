@@ -10,16 +10,18 @@
     AllowsTransparency="True"
         Title="SmartSort" Height="400" Width="600" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="Transparent">
 
-    <Border Background="#ea8f23" BorderBrush="White" BorderThickness="0,0,0,0" CornerRadius="30,0,0,0">
+    <Border Background="#ea8f23" BorderBrush="White" BorderThickness="0,0,0,0" CornerRadius="30,0,0,0" MouseDown="Grid_MouseDown">
         <Grid>
 
             <Grid HorizontalAlignment="Left" Height="55" Background="#fff"  Margin="151,5,0,0" VerticalAlignment="Top" Width="449">
-                <Image x:Name="image_exit" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="30" Source="Image\exit.png" Margin="419,0,0,0"/>
-                <Image x:Name="image_minimize" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="30" Source="Image\mini.png" Margin="384,0,0,0"/>
-                <Image x:Name="image_page" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="44" Margin="5,5,0,0" Source="Image/home.png" MouseDown="image_MouseDown"/>
+                <Image x:Name="image_exit" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="30" Source="Image\exit.png" Margin="419,0,0,0" MouseDown="mouse_Click"/>
+                
+                <Image x:Name="image_minimize" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="30" Source="Image\mini.png" Margin="384,0,0,0" MouseDown="mouse_Click"/>
+                <Image x:Name="image_page" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="44" Margin="5,5,0,0" Source="Image/home.png"/>
             </Grid>
             <Grid HorizontalAlignment="Left" Height="340" Background="#2e4053"  VerticalAlignment="Top" Width="151" Margin="0,60,0,0">
-                <Button x:Name="button" Content="Home" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="151" FontFamily="Franklin Gothic Demi Cond" FontSize="29.333" Background="#FF2E4053" Foreground="White" BorderThickness="0"/>
+
+                <Button x:Name="button" Content="Home" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="151" FontFamily="Franklin Gothic Demi Cond" FontSize="29.333" Background="#FF2E4053" Foreground="White" BorderThickness="0" MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave"/>
                 <Button x:Name="button_Copy" Content="Rules" HorizontalAlignment="Left" Margin="0,50,0,0" VerticalAlignment="Top" Width="151" FontFamily="Franklin Gothic Demi Cond" FontSize="29.333" Background="#FF2E4053" Foreground="White" BorderThickness="0"/>
                 <Button x:Name="button_Copy1" Content="Settings" HorizontalAlignment="Left" Margin="0,90,0,0" VerticalAlignment="Top" Width="151" FontFamily="Franklin Gothic Demi Cond" FontSize="29.333" Background="#FF2E4053" Foreground="White" BorderThickness="0"/>
             </Grid>

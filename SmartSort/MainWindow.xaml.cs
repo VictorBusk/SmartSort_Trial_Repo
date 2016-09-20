@@ -25,14 +25,43 @@ namespace SmartSort
             InitializeComponent();
         }
 
-        private void image_MouseDown(object sender, MouseButtonEventArgs e)
+        private void mouse_Click(object sender, MouseButtonEventArgs e)
         {
-            switch (e.Source.ToString())
+            switch (((FrameworkElement)sender).Name.ToString())
             {
                 case "image_minimize":
-                    MessageBox.Show("HELLO WORLD");
+                    UICommands.minimize(this);
+                    break;
+                case "image_exit":
+                    UICommands.exit();
                     break;
             }
         }
+
+        private void button_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Button[] btn;
+            btn = new Button[] { button };
+            UICommands.setButtonColor(btn, "#808000	");
+        }
+
+        private void button_MouseLeave(object sender, MouseEventArgs e)
+        {
+            Button[] btn;
+            btn = new Button[] { button };
+            UICommands.setButtonColor(btn, "#FF2E4053");
+        }
+
+
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+                try
+                {
+                    this.DragMove();
+                }
+                catch (Exception) { }
+        }
+
     }
 }
