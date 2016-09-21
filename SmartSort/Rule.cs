@@ -40,7 +40,10 @@ namespace SmartSort
             {
                 foreach (string f in Directory.GetFiles(dir))
                 {
-                    moveFile(f);
+                    if (f.Substring(f.LastIndexOf(@"\")).Contains(keyWord))
+                    {
+                        moveFile(f);
+                    }
                 }
                 if (includeFolders)
                 {
@@ -57,8 +60,8 @@ namespace SmartSort
         }
         private void moveFile(String path)
         {
-            var lol = destination + path.Replace(source, "");
-            File.Move(path, lol);
+            var fileDestination = destination + path.Replace(source, "");
+            File.Move(path, fileDestination);
         }
     }
 
