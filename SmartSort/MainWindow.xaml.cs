@@ -36,6 +36,7 @@ namespace SmartSort
                     UICommands.exit();
                     break;
             }
+            //button.Style.Triggers[0]
         }
 
         private void button_MouseEnter(object sender, MouseEventArgs e)

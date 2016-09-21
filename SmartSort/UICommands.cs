@@ -24,7 +24,7 @@ namespace SmartSort
         public static void setButtonColor(Button[] elements, String colorCode)
         {
             brush = (Brush)bc.ConvertFrom(colorCode);
-            foreach(Button element in elements)
+            foreach (Button element in elements)
             {
                 element.Background = brush;
             }

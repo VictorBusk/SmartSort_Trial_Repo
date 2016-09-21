@@ -99,9 +99,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="exit.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Image\folder.png" />
     <Resource Include="Image\Format.png" />
     <Resource Include="Image\home.png" />
