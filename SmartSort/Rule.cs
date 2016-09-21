@@ -39,6 +39,7 @@ namespace SmartSort
             FileAttributes fiat = File.GetAttributes(element); // Mmmmmmm FUNNNNYYYY JOKE!!!
             if ((fiat & FileAttributes.Directory) == FileAttributes.Directory)
             {
+                System.IO.Directory.CreateDirectory("");
                 Console.WriteLine("Its a directory");
             }
             else
