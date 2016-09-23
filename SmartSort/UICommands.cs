@@ -21,13 +21,25 @@ namespace SmartSort
         {
             window.WindowState = WindowState.Minimized;
         }
-        public static void setButtonColor(Button[] elements, String colorCode)
+        public static void setButtonColor(FrameworkElement sender, MainWindow window, String colorcode)
+        {
+            switch (((FrameworkElement)sender).Name.ToString())
+            {
+                case "button_home":
+                    UICommands.setButtonColor(window.button_home, colorcode);
+                    break;
+                case "button_rules":
+                    UICommands.setButtonColor(window.button_rules, colorcode);
+                    break;
+                case "button_settings":
+                    UICommands.setButtonColor(window.button_settings, colorcode);
+                    break;
+            }
+        }
+        public static void setButtonColor(Button element, String colorCode)
         {
             brush = (Brush)bc.ConvertFrom(colorCode);
-            foreach (Button element in elements)
-            {
-                element.Background = brush;
-            }
+            element.Background = brush;
         }
     }
 }

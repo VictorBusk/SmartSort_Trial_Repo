@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/exit.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("stylesheet1.css")]
 
 
