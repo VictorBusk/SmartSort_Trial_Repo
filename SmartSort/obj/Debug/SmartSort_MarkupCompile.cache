@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Mikkel\Documents\GitHub\SmartSort\SmartSort\App.xaml
-2-621098922
+4-266133191
 
-8323874643
+10276982279
 14-1001767708
-Home.xaml;MainWindow.xaml;
+HomeWindow.xaml;MainWindow.xaml;RuleWindow.xaml;SettingWindow.xaml;
 
 False
 

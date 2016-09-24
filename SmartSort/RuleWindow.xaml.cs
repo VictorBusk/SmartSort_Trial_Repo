@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace SmartSort
 {
     /// <summary>
-    /// Interaction logic for Home.xaml
+    /// Interaction logic for RuleWindow.xaml
     /// </summary>
-    public partial class Home : UserControl
+    public partial class RuleWindow : UserControl
     {
-        public Home()
+        public RuleWindow()
         {
             InitializeComponent();
         }

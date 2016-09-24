@@ -4,8 +4,22 @@
              xmlns:local="clr-namespace:SmartSort"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <!-- Tetbox design-->
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" CornerRadius="5">
+                            <DockPanel>
+                                <ScrollViewer Background="Transparent" HorizontalAlignment="Stretch" x:Name="PART_ContentHost"/>
+                            </DockPanel>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!-- Button design-->
         <Style TargetType="{x:Type Button}">
-            <Setter Property="Background" Value="#47586a"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">

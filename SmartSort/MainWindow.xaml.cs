@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -23,10 +24,10 @@ namespace SmartSort
         public MainWindow()
         {
             InitializeComponent();
-            this.Page.Children.Add(new Home());
+            this.Page.Children.RemoveRange(0, this.Page.Children.Count);
+            this.Page.Children.Add(new HomeWindow());
         }
-
-        private void mouse_Click(object sender, MouseButtonEventArgs e)
+        public void mouseclick(Object sender)
         {
             switch (((FrameworkElement)sender).Name.ToString())
             {
@@ -36,8 +37,19 @@ namespace SmartSort
                 case "image_exit":
                     UICommands.exit();
                     break;
+                case "button_home":
+                    this.Page.Children.RemoveRange(0, this.Page.Children.Count);
+                    this.Page.Children.Add(new HomeWindow());
+                    break;
+                case "button_rules":
+                    this.Page.Children.RemoveRange(0, this.Page.Children.Count);
+                    this.Page.Children.Add(new RuleWindow());
+                    break;
+                case "button_settings":
+                    this.Page.Children.RemoveRange(0, this.Page.Children.Count);
+                    this.Page.Children.Add(new SettingWindow());
+                    break;
             }
-            //button.Style.Triggers[0]
         }
 
         private void button_MouseEnter(object sender, MouseEventArgs e)
@@ -61,5 +73,13 @@ namespace SmartSort
                 catch (Exception) { }
         }
 
+        private void mouse_Click(object sender, RoutedEventArgs e)
+        {
+            mouseclick(sender);
+        }
+        private void mouse_Click(object sender, MouseButtonEventArgs e)
+        {
+            mouseclick(sender);
+        }
     }
 }
