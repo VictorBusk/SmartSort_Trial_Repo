@@ -47,3 +47,4 @@ C:\Users\Mikkel\Documents\GitHub\SmartSort\SmartSort\obj\Debug\SmartSort.Propert
 C:\Users\Mikkel\Documents\GitHub\SmartSort\SmartSort\obj\Debug\SmartSort.csproj.GenerateResource.Cache
 C:\Users\Mikkel\Documents\GitHub\SmartSort\SmartSort\obj\Debug\SmartSort.exe
 C:\Users\Mikkel\Documents\GitHub\SmartSort\SmartSort\obj\Debug\SmartSort.pdb
+C:\Users\Mikkel\Documents\GitHub\SmartSort\SmartSort\obj\Debug\SmartSort.csprojResolveAssemblyReference.cache
