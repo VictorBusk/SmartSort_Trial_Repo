@@ -71,9 +71,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Languages\Danish.cs" />
     <Compile Include="HomeWindow.xaml.cs">
       <DependentUpon>HomeWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Languages\English.cs" />
+    <Compile Include="Languages\German.cs" />
     <Compile Include="Rule.cs" />
     <Compile Include="RuleWindow.xaml.cs">
       <DependentUpon>RuleWindow.xaml</DependentUpon>

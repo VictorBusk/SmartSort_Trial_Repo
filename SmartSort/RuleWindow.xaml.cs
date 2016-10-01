@@ -23,7 +23,6 @@ namespace SmartSort
         public RuleWindow()
         {
             InitializeComponent();
-            comboBox.Items.Add("Hello world");
         }
     }
 }

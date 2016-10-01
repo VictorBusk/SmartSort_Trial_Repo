@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
@@ -55,6 +56,28 @@ namespace SmartSort
                 key.DeleteValue(curAssembly.GetName().Name, false);
             }
             catch { }
+        }
+
+        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void applyBtn_Click(object sender, RoutedEventArgs e)
+        {
+            switch (comboBox.Text)
+            {
+                case "Danish":
+                    Danish.setDanish();
+                    break;
+                case "English":
+                    English.setEnglish();
+                    break;
+                case "German":
+                    German.setGerman();
+                    break;
+            }
+
         }
     }
 }

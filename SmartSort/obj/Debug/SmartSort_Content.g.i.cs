@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("stylesheet1.css")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("languages/en-us.xml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("languages/he-il.xml")]
 
 
