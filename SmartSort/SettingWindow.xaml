@@ -7,8 +7,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300" Width="450" Height="340">
     <Grid Background="#e5e5e5" Width="450">
-        <CheckBox x:Name="checkBox" Content="Start with Windows" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
-        <CheckBox x:Name="checkBox1" Content="Enable sound" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,30,0,0"/>
+        <CheckBox x:Name="startBox" Content="Start with Windows" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Checked="startChecked" Unchecked="startUnchecked"/>
+        <CheckBox x:Name="soundBox" Content="Enable sound" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,30,0,0"/>
         <Label x:Name="label" Content="Language" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0"/>
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="77,54,0,0" VerticalAlignment="Top" Width="200"/>
         <Label x:Name="label1" Content="Verison number 0.1, Version date: 24-09-2016, licensed to: Beta " HorizontalAlignment="Left" Margin="97,304,0,0" VerticalAlignment="Top"/>
