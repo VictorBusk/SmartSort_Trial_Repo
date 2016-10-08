@@ -54,7 +54,7 @@ namespace SmartSort
                     {
                         moveFile(f);
                     }
-                    else if (allFilesInKeyFolder)
+                    else if (allFilesInKeyFolder && f.Substring(f.LastIndexOf(@"\")).Contains(fileExtension))
                     {
                         moveFile(f);
                     }
