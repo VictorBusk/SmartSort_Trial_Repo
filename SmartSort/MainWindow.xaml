@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:SmartSort"
         mc:Ignorable="d"
     AllowsTransparency="True"
-        Title="SmartSort" Height="400" Width="601" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="Transparent">
+        Title="SmartSort" Height="400" Width="601" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="Transparent" Icon="Image/icon.ico">
 
     <Border Background="#ea8f23" BorderBrush="White" BorderThickness="0,0,0,0" CornerRadius="30,0,0,0" MouseDown="Grid_MouseDown">
         <Grid>
