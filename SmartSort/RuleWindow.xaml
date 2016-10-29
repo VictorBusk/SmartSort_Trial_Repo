@@ -11,7 +11,7 @@
     </UserControl.Resources>
     <Grid Background="#e5e5e5">
         <Label x:Name="rulesLabel" Content="Rules:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="23"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="370" Margin="88,10,-8,0" Height="23"/>
+        <ComboBox x:Name="comboBox_Rules" IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding SomeBindingPropertyList}" SelectedItem="{Binding SomeBindingPropertySelectedCurrently, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="370" Margin="88,10,-8,0" Height="23"/>
         <Label x:Name="TitLabel" Content="Title:" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Height="23"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="88,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="352"/>
         <Label x:Name="sourcesLabel" Content="Sources:" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Height="23"/>
@@ -34,7 +34,7 @@
         </ListBox>
         <Label x:Name="destLabel_Copy2" Content="Rules:" HorizontalAlignment="Left" Margin="10,178,0,0" VerticalAlignment="Top" Height="23"/>
         <Button x:Name="button_Copy1" Content="Save rule" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="365,307,0,0" Height="23" Background="#FFEA8F23" Foreground="White"/>
-        <Button x:Name="button_Copy2" Content="Delete Rule" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="365,279,0,0" Height="23" Background="#FFEA8F23" Foreground="White"/>
+        <Button x:Name="button_Copy2" Content="Delete Rule" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="365,279,0,0" Height="23" Background="#FFEA8F23" Foreground="White" Click="button_Copy2_Click"/>
 
     </Grid>
 </UserControl>

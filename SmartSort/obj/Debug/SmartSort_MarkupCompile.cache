@@ -9,12 +9,19 @@ SmartSort
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\Victor Busk\Documents\GitHub\SmartSort\SmartSort\App.xaml
 4-266133191
 
 14-1040774928
+=======
+C:\Users\Mikkel\Documents\GitHub\SmartSort\SmartSort\App.xaml
+5819943497
+
+14-1609787095
+>>>>>>> origin/master
 14-1001767708
-HomeWindow.xaml;MainWindow.xaml;RuleWindow.xaml;SettingWindow.xaml;
+HomeWindow.xaml;MainWindow.xaml;PopUp.xaml;RuleWindow.xaml;SettingWindow.xaml;
 
 False
 

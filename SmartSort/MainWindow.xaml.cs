@@ -33,6 +33,7 @@ namespace SmartSort
         }
         public void mouseclick(Object sender)
         {
+            PopUp pop = new PopUp("Test", "This is the content", "Yes", "No");
             switch (((FrameworkElement)sender).Name.ToString())
             {
                 case "image_minimize":
