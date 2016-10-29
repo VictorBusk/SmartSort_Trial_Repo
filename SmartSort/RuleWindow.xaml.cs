@@ -20,9 +20,19 @@ namespace SmartSort
     /// </summary>
     public partial class RuleWindow : UserControl
     {
+        List<Rule> rulelist = new List<Rule>();
         public RuleWindow()
         {
             InitializeComponent();
+            comboBox_Rules.ItemsSource = rulelist;
+            comboBox_Rules.DisplayMemberPath = "name";
+            comboBox_Rules.SelectedValuePath = "name";
+            rulelist.Add(new Rule("New","","","","",false,false,false,false,false,false,false));
+        }
+
+        private void button_Copy2_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

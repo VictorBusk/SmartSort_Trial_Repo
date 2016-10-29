@@ -22,7 +22,7 @@ namespace SmartSort
         public bool allFilesInKeyFolder { get; set; }
         private String destination_temp;
         private String source_temp;
-        private bool startingWith {get; set;}
+        private bool startingWith { get; set; }
         private bool endingWith { get; set; }
 
         public Rule(String _name, String _source, String _destination, String _keyWord, String _fileExtension, bool _includeFolders, bool _FoldersNeedKey, bool _keepSource, bool _replaceFile, bool _allFilesInKeyFolder, bool _startingWith, bool _endingWith)
@@ -58,7 +58,6 @@ namespace SmartSort
         {
             if (startingWith)
             {
-                Console.WriteLine(path.Substring(path.LastIndexOf(@"\") + 1));
                 return path.Substring(path.LastIndexOf(@"\") + 1).StartsWith(keyWord);
             }
             return false;
@@ -67,7 +66,6 @@ namespace SmartSort
         {
             if (endingWith)
             {
-                Console.WriteLine(path.Substring(path.LastIndexOf(@"\") + 1, path.LastIndexOf('.') - (path.LastIndexOf(@"\") + 1)));
                 return path.Substring(path.LastIndexOf(@"\") + 1, path.LastIndexOf('.') - (path.LastIndexOf(@"\") + 1)).EndsWith(keyWord);
             }
             return false;
@@ -78,7 +76,11 @@ namespace SmartSort
             {
                 foreach (String f in Directory.GetFiles(dir))
                 {
-                    if (f.Substring(f.LastIndexOf('\\')).Contains(keyWord) && f.Substring(f.LastIndexOf('.')).Contains(fileExtension) || InBeginning(f) || InEnd(f))
+                    if (f.Substring(f.LastIndexOf('\\')).Contains(keyWord) && f.Substring(f.LastIndexOf('.')).Contains(fileExtension) && !startingWith && !endingWith)
+                    {
+                        moveFile(f);
+                    }
+                    else if (InBeginning(f) || InEnd(f))
                     {
                         moveFile(f);
                     }
@@ -127,7 +129,8 @@ namespace SmartSort
                 File.Copy(path, fileDestination, replaceFile);
             }
             else {
-                if(!unique(fileDestination)) {
+                if (!unique(fileDestination))
+                {
                     if (File.Exists(fileDestination))
                     {
                         File.Delete(fileDestination);
@@ -161,6 +164,6 @@ namespace SmartSort
             Regex regex = new Regex(string.Format("\\{0}.*?\\{1}", begin, end));
             return regex.Replace(s, string.Empty);
         }
-        
+
     }
 }

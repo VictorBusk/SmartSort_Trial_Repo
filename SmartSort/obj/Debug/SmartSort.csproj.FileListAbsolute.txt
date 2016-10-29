@@ -68,3 +68,5 @@ C:\Users\Victor Busk\Documents\GitHub\SmartSort\SmartSort\obj\Debug\SettingWindo
 C:\Users\Victor Busk\Documents\GitHub\SmartSort\SmartSort\obj\Debug\SmartSort.g.resources
 C:\Users\Victor Busk\Documents\GitHub\SmartSort\SmartSort\obj\Debug\SmartSort.Properties.Resources.resources
 C:\Users\Victor Busk\Documents\GitHub\SmartSort\SmartSort\obj\Debug\SmartSort.csproj.GenerateResource.Cache
+C:\Users\Mikkel\Documents\GitHub\SmartSort\SmartSort\obj\Debug\PopUp.g.cs
+C:\Users\Mikkel\Documents\GitHub\SmartSort\SmartSort\obj\Debug\PopUp.baml
